@@ -60,21 +60,12 @@ color:#000000;
 }
 
 @media screen and (max-width: 768px) {
-  .hide-on-mobile {
+  nav ul li.nav-shop,
+  nav ul li.nav-about{
     display: none;
   }
-
-  .nav-items {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  .nav-items .nav-cart {
-    margin: 0 10px;
-  }
+}
 
   
-}
+
     
-}
