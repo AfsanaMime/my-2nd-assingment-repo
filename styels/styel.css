@@ -67,10 +67,7 @@ color:#000000;
     display: none;
   }
 
-  .nav-items {
-    display: flex;
-    align-items: center;
-  }
+  
 
   .nav-items li {
     margin-left: 12px;
