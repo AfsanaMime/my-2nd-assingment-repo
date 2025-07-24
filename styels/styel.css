@@ -59,13 +59,35 @@ color:#000000;
     text-align: center;
 }
 
+
 @media screen and (max-width: 768px) {
-  nav ul li.nav-shop,
-  nav ul li.nav-about{
+  .hide-on-mobile {
     display: none;
   }
-}
 
+  .nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-items li {
+    list-style: none;
+    margin: 0 10px;
+  }
+
+  nav.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav.container figure img {
+    width: 100px; 
+  }
+}
   
 
     
