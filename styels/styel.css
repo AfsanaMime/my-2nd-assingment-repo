@@ -62,20 +62,16 @@ color:#000000;
 
 
   
-  @media screen and (max-width: 768px) {
-  .hide-on-mobile {
+  
+@media (max-width: 768px) {
+  .nav-shop,
+  .nav-about {
     display: none;
   }
 
-  
-
-  .nav-items li {
-    margin-left: 12px;
-  }
-
-  figure img {
-    height: 40px; 
+  .nav-items {
+    display: flex !important;
+    gap: 15px;
   }
 }
-
     
