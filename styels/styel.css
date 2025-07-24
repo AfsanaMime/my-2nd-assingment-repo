@@ -66,12 +66,9 @@ color:#000000;
 @media (max-width: 768px) {
   .nav-shop,
   .nav-about {
-    display: none;
+    display: block;
   }
 
-  .nav-items {
-    display: flex !important;
-    gap: 15px;
-  }
-}
+  
+  
     
