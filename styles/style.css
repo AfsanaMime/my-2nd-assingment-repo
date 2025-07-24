@@ -1,0 +1,73 @@
+/* Main Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+}
+
+/* Logo */
+.logo img {
+  height: 40px;
+}
+
+/* Nav items */
+.nav-items {
+  display: flex;
+  list-style: none;
+  gap: 48px;
+}
+
+.nav-items li a {
+  text-decoration: none;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Individual Nav Item Styles */
+.nav-home {
+  color: #252432;
+  font-weight: 700;
+}
+.nav-shop,
+.nav-about {
+  color: #8987A1;
+  font-weight: 400;
+}
+.nav-cart {
+  color: #000000;
+  font-weight: 400;
+}
+
+/* Only for Mobile: Hide initially */
+.only-cart-mobile {
+  display: none;
+}
+
+/* Container settings */
+.container {
+  max-width: 1500px;
+  margin: auto;
+}
+
+/* ✅ Mobile Responsive */
+@media (max-width: 768px) {
+  .nav-items {
+    display: none;
+  }
+
+  .only-cart-mobile {
+    display: block;
+    font-size: 20px;
+  }
+
+  .logo img {
+    height: 32px;
+  }
+
+  nav {
+    padding: 12px 20px;
+  }
+}
+    
