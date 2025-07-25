@@ -212,8 +212,9 @@ height: 322.94px;
 /* folower and plants*/
 
 .plants-lover {
-  padding: 40px 20px;
-  background: #F5F8FF;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: #252432;
 }
 
 .container.plants-content {
@@ -292,4 +293,114 @@ text-align: left;
     padding-left: 18px;
     font-size: 1rem;
   }
+}
+
+.plants-lover {
+  padding: 40px 20px;
+  background: #f9fafb; /* light background if you want */
+}
+
+.container.plants-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.plants-image img {
+  width: 100%;
+  max-width: 450px; /* control image size */
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.plants-text {
+  flex: 1;
+  color: #252432; /* dark text */
+}
+
+.plants-text h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  font-family: 'Inter', sans-serif;
+}
+
+.plants-text ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.plants-text ul li {
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.small-line {
+  display: block;
+  color: #777;
+  font-weight: 400;
+  font-size: 0.95rem;
+  margin-top: 4px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .container.plants-content {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .plants-image img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  .plants-text {
+    text-align: left;
+  }
+  .plants-text h2 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+  }
+  .plants-text ul {
+    padding-left: 18px;
+    font-size: 1rem;
+  }
+}
+
+/* text section */
+.text h3{
+  font-family: Noto Serif;
+font-size: 50px;
+font-weight: 700;
+line-height: 68px;
+letter-spacing: 0%;
+text-align: center;
+}
+.text p{
+  color: rgba(0, 0, 0, 0.5);
+font-family: Inter;
+font-size: 22px;
+font-weight: 400;
+line-height: 27px;
+letter-spacing: 0%;
+text-align: center;
+}
+.text-l{
+  color: #E95A08;
+}
+}
+/*mobile responsive */
+@media (max-width: 768px) {
+  .text h3{
+    font-size: 14px;
+  }
+.text p{
+  font-size: 14px;
 }
