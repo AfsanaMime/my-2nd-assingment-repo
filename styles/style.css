@@ -1,37 +1,50 @@
-/* Navbar */
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  background: #F5F8FF;
+  color: #252432;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 32px;
+  padding: 16px;
+}
+
+/* Navbar */
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .logo img {
-  height: 60px;
+  max-height: 50px;
 }
 
 .nav-right {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 32px;
 }
 
 .nav-items {
   list-style: none;
   display: flex;
-  gap: 32px;
-  margin: 0;
-  padding: 0;
+  gap: 24px;
 }
 
 .nav-items li a {
   text-decoration: none;
-  font-weight: 500;
   color: #252432;
-  font-family: 'Inter', sans-serif;
+  font-size: 16px;
 }
 
 .nav-cart {
@@ -43,77 +56,143 @@
   gap: 8px;
 }
 
-/* Banner Section */
+/* Banner */
 .banner {
-  padding: 60px 0;
-  background-color: #fff;
-}
-
-.banner-content {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 40px;
 }
 
-.text-area {
-  flex: 1;
-  max-width: 600px;
+.banner-content h1 {
+  font-family: Noto Serif;
+  font-size: 65px;
+  font-weight: bold;
+  color: #252432;
+  line-height: 89 px;
 }
 
-.image-area {
-  flex: 1;
-  text-align: right;
+.banner-content .highlight {
+  color: #E95A08
 }
 
-.image-area img {
-  max-width: 100%;
+.banner-content p {
+  font-family: Inter, sans-serif;
+  margin-top: 16px;
+  font-size: 22px;
+  color:#00000080 50% ;
+  max-width: 500px;
+}
+
+.banner-image img {
+  max-width: 570px;
   height: auto;
 }
 
-/* Text Styling */
-h1 {
-  font-size: 48px;
-  line-height: 1.2;
-  font-family: 'Inter', sans-serif;
-  margin-bottom: 20px;
-}
-
-.black {
-  color: #252432;
-  font-weight: bold;
-}
-
-.orange {
-  color: #de5e21;
-  font-weight: bold;
-}
-
-p {
-  font-size: 16px;
-  color: #444;
-}
-
-/* Responsive */
+/* Mobile Responsive */
 @media (max-width: 768px) {
-  .container {
+  .nav-items {
+    display: none;
+  }
+
+  .nav {
+    flex-direction: row;
+  }
+
+  .nav-cart {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .banner {
     flex-direction: column;
-    text-align: center;
+    text-align: left;
   }
 
   .banner-content {
-    flex-direction: column;
-    text-align: center;
+    order: 2;
+    text-align: left;
   }
 
-  .image-area {
+  .banner-image {
+    order: 1;
     text-align: center;
-    margin-top: 20px;
   }
+}
+/* Our Plants Section */
+.plants-section {
+  text-align: center;
+  margin-top: 80px;
+}
+.plants-header h2 {
+font-family:Noto Serif,sans-serif ;
+font-size: 50px;
+font-weight: 700;
+line-height: 68px;
+letter-spacing: 0%;
+text-align: center;
+row height: 1px;
+}
+.plants-header .highlight {
+  color: #de5c28;
+}
+.plants-header p {
+  
+color: rgba(0, 0, 0, 0.5);
+font-family: Inter,sans-serif;
+font-size: 22px;
+font-weight: 400;
+line-height: 27px;
+letter-spacing: 0%;
+text-align: center;
+}
 
-  .nav-right {
-    flex-direction: column;
-    gap: 16px;
-    margin-top: 20px;
+.plant-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.plant-card {
+  background-color: #f8faff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+}
+.plant-card img {
+  width: 270px;
+height: 322.94px;
+  border-radius: 6px;
+}
+.plant-card h3 {
+  
+  font-size: 22px;
+  font-weight: 500;
+   color: #111111;
+}
+.plant-card p {
+  font-size: 22px;
+  font-weight: 700px;
+  font-family: Inter,sans-serif;
+}
+.plant-card button {
+  font-family: Inter,sans-serif;
+  background-color: #de5c28;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.plant-card button:hover {
+  background-color: #252432;
+}
+
+/* Responsive Grid for Mobile */
+@media (max-width: 768px) {
+  .plant-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
