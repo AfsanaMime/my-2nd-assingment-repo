@@ -152,7 +152,7 @@ text-align: center;
 .plant-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  
 }
 .plant-card {
   background-color: #f8faff;
