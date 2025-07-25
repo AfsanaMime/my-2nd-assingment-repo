@@ -374,33 +374,247 @@ text-align: left;
   }
 }
 
-/* text section */
-.text h3{
-  font-family: Noto Serif;
-font-size: 50px;
-font-weight: 700;
-line-height: 68px;
-letter-spacing: 0%;
-text-align: center;
+/* Text Section */
+.text {
+  text-align: center;
+  padding: 60px 20px;
 }
-.text p{
-  color: rgba(0, 0, 0, 0.5);
+
+.text h3 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.text .text-l {
+  color: #FF4E75;
+}
+
+.text p {
+  font-size: 16px;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Latest Deals */
+.latest-deals {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.deals-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Deal Cards */
+.deal-card {
+  
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+
+
+
+.card-content {
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* Add to Cart Button */
+.deal-button {
+  color: rgb(255, 255, 255);
 font-family: Inter;
-font-size: 22px;
-font-weight: 400;
-line-height: 27px;
+font-size: 16px;
+font-weight: 600;
+line-height: 19px;
 letter-spacing: 0%;
-text-align: center;
+text-align: left;
+text-decoration-line: underline;
+background: none;
 }
-.text-l{
-  color: #E95A08;
+
+
+
+
+/* Centered single card (card 3) */
+.single-center {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
 }
+
+/* Background images */
+.card1 {
+  background-image: url('../assets/deal-bloom.png');
+  
+  
 }
-/*mobile responsive */
+
+.card2 {
+  background-image: url('../assets/deal-ana.png');
+}
+
+.card3 {
+  background-image: url('../assets/deal-zabo.png');
+  margin-top: 10px;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-  .text h3{
-    font-size: 14px;
+  .deals-container {
+    flex-direction: column;
+    align-items: center;
   }
-.text p{
+
+  .single-center {
+    flex-basis: auto;
+  }
+}
+
+/* Newsletter Section */
+.newsletter {
+  background-image: url(../assets/news-letter-bg.png);
+  text-align: center;
+  
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+}
+
+.newsletter h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.newsletter input[type="email"] {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 30px;
+  width: 250px;
+  font-size: 16px;
+  outline: none;
+}
+
+.newsletter button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  background-color: #FF4E75;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.newsletter button:hover {
+  background-color: #e03d64;
+}
+
+/* Footer Section */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 60px 20px;
+  background-color: #252432;
+  color: #fff;
+  gap: 30px;
+  background-color: #f8faff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.footer-info {
+  flex: 1 1 250px;
+}
+
+.footer-info img {
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+.footer-info p {
   font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-navigation,
+.footer-links {
+  flex: 1 1 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-navigation a,
+.footer-links a {
+  color: #bbb;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-navigation a:hover,
+.footer-links a:hover {
+  color: #fff;
+}
+
+.social {
+  flex: 1 1 150px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.social img {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.social img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .newsletter form {
+    flex-direction: column;
+  }
+
+  .newsletter input[type="email"],
+  .newsletter button {
+    width: 100%;
+    max-width: 300px;
+  }
 }
