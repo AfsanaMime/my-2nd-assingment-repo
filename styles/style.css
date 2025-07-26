@@ -438,7 +438,7 @@ text-align: left;
 /* Add to Cart Button */
 .deal-button {
   color: rgb(255, 255, 255);
-font-family: Inter;
+font-family: Inter,sans-serif;
 font-size: 16px;
 font-weight: 600;
 line-height: 19px;
@@ -460,7 +460,8 @@ background: none;
 
 /* Background images */
 .card1 {
-  background-image: url('../assets/deal-bloom.png');
+  background-image: url('../assets/deal-bloom.png')
+  
   
   
 }
@@ -540,7 +541,7 @@ background: none;
   justify-content: space-between;
   padding: 60px 20px;
   background-color: #252432;
-  color: #fff;
+  color: #252432
   gap: 30px;
   background-color: #f8faff;
   padding-top: 80px;
@@ -566,11 +567,12 @@ background: none;
   flex: 1 1 150px;
   display: flex;
   flex-direction: column;
+  color: #111111;
 }
 
 .footer-navigation a,
 .footer-links a {
-  color: #bbb;
+  color: #111111;
   text-decoration: none;
   margin-bottom: 10px;
   font-size: 14px;
@@ -579,7 +581,7 @@ background: none;
 
 .footer-navigation a:hover,
 .footer-links a:hover {
-  color: #fff;
+  color: #555;
 }
 
 .social {
@@ -616,5 +618,6 @@ background: none;
   .newsletter button {
     width: 100%;
     max-width: 300px;
+    text-align: center;
   }
 }
